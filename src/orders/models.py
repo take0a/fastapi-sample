@@ -13,7 +13,7 @@ class OrderHeader(Base):
     customerId: Mapped[int] = mapped_column(name="customer_id")
     orderDate: Mapped[date] = mapped_column(name="order_date")
     details: Mapped[list["OrderDetail"]] = relationship(
-        cascade="all, delete", lazy="joined")
+        cascade="all, delete-orphan", lazy="joined")
 
     def __repr__(self) -> str:
         return f"OrderHeader(orderId={self.orderId!r}, " \
