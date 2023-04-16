@@ -1,12 +1,3 @@
----
-title: "FastAPIでREST（その１）"
-emoji: "🏎"
-type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["fastapi", "rest", "postgresql", "python"]
-published: false
-publication_name: "robon"
----
-
 # はじめに
 
 当社では、クラウドネイティブなSaaSの開発をしており、いつもはWebAPIの実装ならサーバーレスで。となるのですが、今回は、サーバーレスでないWebAPIの実現方法として、NestJSに続き、FastAPIを動かしてみましたという内容です。
