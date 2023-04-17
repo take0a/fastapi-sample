@@ -8,7 +8,7 @@ settings = config.Settings()
 DB_URL = "postgresql+asyncpg://" \
     f"{settings.DB_USER}:{settings.DB_PASS}@{settings.DB_HOST}:5432/postgres"
 
-engine = create_async_engine(DB_URL, echo=True)
+engine = create_async_engine(DB_URL, echo=False)
 async_session = async_sessionmaker(engine, expire_on_commit=False)
 
 
